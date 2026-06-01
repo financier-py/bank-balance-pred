@@ -5,6 +5,7 @@ description = "Prototype for multi-horizon bank deposit"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "catboost>=1.2.10",
     "fastparquet>=2026.5.0",
     "ipykernel>=7.2.0",
     "numpy>=2.4.6",
