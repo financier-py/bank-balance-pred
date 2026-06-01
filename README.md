@@ -4,5 +4,6 @@
 ![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![CatBoost](https://img.shields.io/badge/CatBoost-6D25D9?style=for-the-badge&logo=catboost&logoColor=white)
 
 Тут, наверное, будет прототип системы машинного обучения для помесячного прогнозирования денежных средств клиентов в банке $:)$
