@@ -5,6 +5,9 @@ description = "Prototype for multi-horizon bank deposit"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "fastparquet>=2026.5.0",
     "numpy>=2.4.6",
     "pandas>=3.0.3",
+    "pyarrow>=24.0.0",
+    "pyspark>=4.1.2",
 ]
