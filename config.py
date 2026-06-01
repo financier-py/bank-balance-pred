@@ -12,3 +12,4 @@ PROFILES_PATH = "data/profiles.parquet"
 MOVEMENTS_PATH = "data/movements.parquet"
 CONFORMED_PATH = MOVEMENTS_PATH # временно TODO
 FEATURES_PATH = 'data/features.parquet'
+SUPERVISED_PATH = 'data/supervised.parquet'
