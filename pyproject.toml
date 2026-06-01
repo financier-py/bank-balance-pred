@@ -14,3 +14,7 @@ dependencies = [
     "pyspark>=4.1.2",
     "scikit-learn>=1.8.0",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
