@@ -19,7 +19,7 @@ from pyspark.sql import functions as F
 from pyspark.sql import Window
 from pyspark.sql import SparkSession
 
-import config
+import src.config as config
 
 
 def to_long(conformed):
@@ -91,8 +91,8 @@ def build_features(conformed, profiles):
 if __name__ == "__main__":
     spark = SparkSession.builder.master("local[*]").appName("features").getOrCreate()
 
-    conformed = spark.read.parquet(config.CONFORMED_PATH)
-    profiles = spark.read.parquet(config.PROFILES_PATH)
+    conformed = spark.read.parquet(str(config.CONFORMED_PATH))
+    profiles = spark.read.parquet(str(config.PROFILES_PATH))
 
     feats = build_features(conformed, profiles)
     feats.write.mode("overwrite").parquet(config.FEATURES_PATH)

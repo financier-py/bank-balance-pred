@@ -8,7 +8,7 @@ from pyspark.sql import functions as F
 from pyspark.sql import Window
 from pyspark.sql import SparkSession
 
-import config
+import src.config as config
 
 def add_targets(df):
     w = Window.partitionBy("client_id", "product").orderBy("report_date")
@@ -21,9 +21,9 @@ def add_targets(df):
 if __name__ == "__main__":
     spark = SparkSession.builder.master("local[*]").appName("supervised").getOrCreate()
 
-    feats = spark.read.parquet(config.FEATURES_PATH)
+    feats = spark.read.parquet(str(config.FEATURES_PATH))
     supervised_df = add_targets(feats)
 
-    supervised_df.write.mode("overwrite").parquet(config.SUPERVISED_PATH) 
+    supervised_df.write.mode("overwrite").parquet(str(config.SUPERVISED_PATH))
 
     spark.stop()

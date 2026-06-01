@@ -14,7 +14,7 @@
 import numpy as np
 import pandas as pd
 
-import config
+import src.config as config
 
 BASE_LEVEL = {
     "deposit": {"mass": 80_000, "premium": 700_000, "first": 4_000_000},

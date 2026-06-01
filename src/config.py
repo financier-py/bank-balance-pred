@@ -9,7 +9,7 @@ DATA_END = "2026-04-30"
 
 PRODUCTS = ["deposit", "savings", "card"]
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 PROFILES_PATH = DATA_DIR / "profiles.parquet"
 MOVEMENTS_PATH = DATA_DIR / "movements.parquet"
 CONFORMED_PATH = MOVEMENTS_PATH  # временно TODO

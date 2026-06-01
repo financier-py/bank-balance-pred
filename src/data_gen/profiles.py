@@ -10,7 +10,7 @@
 import numpy as np
 import pandas as pd
 
-import config
+import src.config as config
 
 SEGMENTS = {
     "mass": 0.85,
