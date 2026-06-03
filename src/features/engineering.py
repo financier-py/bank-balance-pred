@@ -95,7 +95,7 @@ if __name__ == "__main__":
     profiles = spark.read.parquet(str(config.PROFILES_PATH))
 
     feats = build_features(conformed, profiles)
-    feats.write.mode("overwrite").parquet(config.FEATURES_PATH)
+    feats.write.mode("overwrite").parquet(str(config.FEATURES_PATH))
 
     print(f"строк: {feats.count()}")
     print(f"колонок: {len(feats.columns)}")
